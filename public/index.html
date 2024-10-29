@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="wordpress.css" rel="stylesheet"/>
+    <style type="text/css">
+      #root{
+        margin: 0 auto;
+        width:80%;
+      }
+
+      input{
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      button:disabled{
+        background: #dddddd;
+      }
+    </style>
+      <meta name="theme-color" content="#000000">
+    <script type="application/javascript" src="http://127.0.0.1:8300/fieldGen.js"></script>
+
+
+    <script type='text/javascript' src='https://api.chargeio.com/assets/api/v1/chargeio.min.js?ver=4.9.6'></script>
+    <script type="text/javascript">
+        var affinipay_options = (function (mode) {
+            if(mode === 0) return {
+                "route": "Settings",
+                "data": {
+                    "receiptPage": "2",
+                    "nonce":"ea13dfa45c",
+                    //"secretKey": "",//
+                    "secretKey": "GzfVY2OwQ1a-_vvvYbN_hQKr2JdJSgXMLUBZinTkQ1JkNcOw18AIRYRLeNLz6",
+                    "merchants": [{
+                        "id": "7RbIOalFQ1-kQY9b8MD_SA",
+                        "created": "2018-04-26T17:10:43.946Z",
+                        "modified": "2018-06-08T19:48:36.649Z",
+                        "status": "ACTIVE",
+                        "trust_account": false,
+                        "name": "Test Account",
+                        "primary": false,
+                        "currency": "USD",
+                        "accepted_card_types": "VISA,MASTERCARD,AMERICAN_EXPRESS,DISCOVER",
+                        "required_payment_fields": "",
+                        "swipe_required_payment_fields": "",
+                        "cvv_policy": "DISABLED",
+                        "avs_policy": "DISABLED",
+                        "ignore_avs_failure_if_cvv_match": true,
+                        "swipe_cvv_policy": "DISABLED",
+                        "swipe_avs_policy": "DISABLED",
+                        "swipe_ignore_avs_failure_if_cvv_match": false,
+                        "transaction_allowed_countries": ""
+                    }, {
+                        "id": "G0Y5h6W-TYG026YcQAyVTg",
+                        "created": "2017-05-08T19:34:09.653Z",
+                        "modified": "2018-06-08T04:01:29.020Z",
+                        "status": "DELETED",
+                        "trust_account": false,
+                        "name": "the new account name",
+                        "primary": true,
+                        "currency": "USD",
+                        "accepted_card_types": "VISA,MASTERCARD,AMERICAN_EXPRESS,DISCOVER",
+                        "required_payment_fields": "cvv,name,address1,city,state,postal_code",
+                        "swipe_required_payment_fields": "cvv,name,email,address1,city,state,postal_code,country",
+                        "cvv_policy": "DISABLED",
+                        "avs_policy": "DISABLED",
+                        "ignore_avs_failure_if_cvv_match": true,
+                        "swipe_cvv_policy": "DISABLED",
+                        "swipe_avs_policy": "DISABLED",
+                        "swipe_ignore_avs_failure_if_cvv_match": false,
+                        "transaction_allowed_countries": ""
+                    }],
+                    "pages": [{"id": 2, "title": "Sample Page"}, {"id": 1, "title": "Hello world!"}]
+                }
+            };
+                // Payment
+            return {
+                "route": "Payment",
+                "receiptPage": "",
+                "publicKey": "m_j3XzSirYTEyAuOznTGoX_w",
+                "data": {
+                    "merchant": "V1IUKkwPxWn1Hlw2ihzVB",
+                    "fields": {
+                        "title": "Make a Payment",
+                        "button_text": "Submit",
+                        "amount": "1.00",
+                        "account": "7RbIOalFQ1-kQY9b8MD_SA",
+                        "amount_field": true,
+                        "customer_fields": false,
+                        "recurs": false,
+                        "recurring_description": "",
+                        "recurring_interval": 1,
+                        "reference_field": false,
+                        "customer_email_field": true,
+                        "customer_name_field": true,
+                        "customer_address_field": false,
+                        "customer_address2_field": false,
+                        "customer_city_field": true,
+                        "customer_state_field": false,
+                        "customer_country_field": false,
+                        "customer_postalcode_field": false,
+                        "customer_phone_field": false,
+                        "amount_field_value": "1.00",
+                        "type": "ach"
+                    }, "required": []//["name", "email"]// , "address1", "city", "state", "postal_code"]
+                }
+            }
+        })(1);
+    </script>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>

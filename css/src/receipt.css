@@ -1,0 +1,30 @@
+.affinipay_receipt {
+    border: 1px solid #888;
+    border-radius: 8px;
+    color: inherit;
+    font: inherit;
+}
+
+.affinipay_receipt h2 {
+    padding: 8px 15px;
+}
+.affinipay_receipt .row {
+    position: relative;
+    display: block;
+}
+.affinipay_receipt .row:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.affinipay_receipt .col-sm-6 {
+    float: left;
+    width: 50%;
+    padding: 8px 15px;
+}
+.affinipay_receipt .col-sm-12 {
+    float: left;
+    width: 100%;
+    padding: 8px 15px;
+}

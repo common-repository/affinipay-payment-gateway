@@ -1,0 +1,10 @@
+{
+    "name": "affinipay/affinipay-wordpress",
+    "description": "AffiniPay Wordpress Plugin",
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "require": {
+        "affinipay/chargeio-php": "dev-master"
+    }
+}

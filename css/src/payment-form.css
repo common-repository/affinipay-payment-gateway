@@ -1,0 +1,66 @@
+#frm_affinipay_payment { font: inherit; }
+#frm_affinipay_payment input { border-radius: 6px; }
+#frm_affinipay_payment input:-ms-input-placeholder { color: #DDD; }
+#frm_affinipay_payment input:-moz-placeholder { color: #DDD; }
+#frm_affinipay_payment input::-webkit-input-placeholder { color: #DDD; }
+#frm_affinipay_payment .affinipay_error { color: #cf4944; }
+
+input.affinipay_error {
+    border: 1px solid #cf4944;
+}
+
+.affinipay_payment_form label {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.affinipay_payment_form label span {
+    display: none;
+    float: right;
+    font-size: 0.75em;
+    padding-top: 6px;
+}
+
+.affinipay_payment_form label span.warning, .affinipay_payment_form label span.affinipay_error {
+    display:block;
+}
+
+.affinipay_payment_form .warning{
+    color: #cf7000;
+}
+
+#btn_payment_submit {
+    margin-top: 15px;
+}
+
+#btn_payment_submit:disabled {
+    filter: invert(100%);
+}
+
+.alert {
+    margin-bottom: 15px;
+}
+
+.alert-danger {
+    background: #CF4944;
+    padding: 8px 15px;
+    color: #FFF;
+    font: inherit
+}
+
+#frm_affinipay_payment .visa {
+    background: url('../images/visa.gif') no-repeat right 8px center;
+}
+#frm_affinipay_payment .mastercard {
+    background: url('../images/mastercard.gif') no-repeat right 8px center;
+}
+#frm_affinipay_payment .discover {
+    background: url('../images/discover.gif') no-repeat right 8px center
+}
+#frm_affinipay_payment .amex {
+    background: url('../images/amex.gif') no-repeat right 8px center;
+}
+#frm_affinipay_payment .jcb_card {
+    background: url('../images/jcb.gif') no-repeat right 8px center;
+}
+

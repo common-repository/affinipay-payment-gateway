@@ -1,0 +1,2 @@
+"use strict";var initialize=function(i){var a=i("#btn_affinipay_settings_submit"),t=i("#affinipay_test_results"),e=i("#affinipay_receipt_page"),n=function(){return i.post(ajaxurl,{action:"affinipay_settings_submit",receipt_page:e.val(),public_key:i("#affinipay_public_key").val(),secret_key:i("#affinipay_secret_key").val()},function(i){t.html(i)})};a.on("click",function(){a.prop("disabled",!0),n().always(function(){a.prop("disabled",!1)})})};jQuery(document).ready(initialize);
+//# sourceMappingURL=maps/affinipay-admin.min.js.map
